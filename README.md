@@ -140,9 +140,11 @@ Test React Native Developer [Junior]
     values with the data type.
 ### 2. what is different between common function  and arrow function?
   a. common function:
+  ```javascript
   functionName() {
     // write some code here
   }
+  ```
 
   b. arrow function:
   ```javascript
@@ -151,6 +153,8 @@ Test React Native Developer [Junior]
   }
   ```
 ### 3. what is different between:
+  ```javascript
   a. let array = oldArray
   b. let array = […oldArray]
+  ```
 ### 4. create a function that simulates API request using your own approach! 
