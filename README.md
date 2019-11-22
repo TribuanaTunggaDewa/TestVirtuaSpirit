@@ -9,11 +9,13 @@ Test React Native Developer [Junior]
     native as the mobile hybrid development Framework, 
     because it has a large andstrong community that looks
     from how many communities contribute to the react native ecosystem Own.
+
     2. The programming language base, the programming language base used by react native itself is JavaScript
     which is one of the most popular languages. 
     With fairly popular languages and a large community 
     and a very rich ecosystem will certainly benefit us 
     from solving a problem with the react native framework. 
+    
     3. Proved, many popular technology companies are using 
     react native for their app development which can be 
     viewed at https://facebook.github.io/react-native/showcase
