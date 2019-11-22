@@ -155,6 +155,8 @@ Test React Native Developer [Junior]
 ### 3. what is different between:
   ```javascript
   a. let array = oldArray
+  ```
+  ```javascript
   b. let array = […oldArray]
   ```
 ### 4. create a function that simulates API request using your own approach! 
