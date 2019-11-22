@@ -11,6 +11,9 @@ Test React Native Developer [Junior]
 
     
 ### 2. From 1 - 10 how's your confident about your react-native development?
+### Answer
+#### If the scale above illustrates the junior scale where the value of 10 there is a gate for middle and intermediate then I was in number 6 but if the scale above describes the scale for experts like those who contribute to the react native ecosystem then My number is between 3 and 4
+
 ### 3. How many lifecycles did you know in react-native? please explain!
 ### 4. What is different between Component compare to PureComponent And ScrollView compare to Flatlist?
 ### 5. Do you know what is a functional component and class component? please explain!
