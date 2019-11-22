@@ -26,7 +26,8 @@ Test React Native Developer [Junior]
 ### Answer
     If the scale above illustrates the junior scale where the value of
     10 there is a gate for middle and intermediate then I was in number 
-    6 but if the scale above describes the scale for experts like those who contribute to the react native ecosystem
+    6 but if the scale above describes the scale for experts like those 
+    who contribute to the react native ecosystem
     then My number is between 3 and 4
 
 ### 3. How many lifecycles did you know in react-native? please explain!
