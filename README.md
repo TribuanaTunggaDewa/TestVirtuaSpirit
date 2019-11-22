@@ -31,9 +31,11 @@ Test React Native Developer [Junior]
   }
 
   b. arrow function:
+  ```javascript
   functionName = () => {
     // write some code here
   }
+  ```
 ### 3. what is different between:
   a. let array = oldArray
   b. let array = […oldArray]
