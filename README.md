@@ -19,7 +19,7 @@ Test React Native Developer [Junior]
 
     3. Proved, many popular technology companies are using 
     react native for their app development which can be 
-    viewed at https://facebook.github.io/react-native/showcase
+    viewed at https://facebook.github.io/react-native/showcase.
 
     
 ### 2. From 1 - 10 how's your confident about your react-native development?
@@ -28,9 +28,31 @@ Test React Native Developer [Junior]
     10 there is a gate for middle and intermediate then I was in number 
     6 but if the scale above describes the scale for experts like those 
     who contribute to the react native ecosystem
-    then My number is between 3 and 4
+    then My number is between 3 and 4.
 
 ### 3. How many lifecycles did you know in react-native? please explain!
+### Answer
+#### Fase
+##### Mounting
+###### constructor()
+    This method is invoked before the other method,
+    it is where we setup an initialization of the values
+    for the state or the other values
+    The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
+
+###### getDerivedStateFromProps()
+    This method is executed just before the Render method.
+    This method is the right place to change the state object based on the initials props.
+    This method naturally changes the state object based on its initials props.
+    This takes the state and props as an argument to return an object that changes the state
+
+###### 
+##### Update
+##### Unmounting
+
+     
+
+
 ### 4. What is different between Component compare to PureComponent And ScrollView compare to Flatlist?
 ### 5. Do you know what is a functional component and class component? please explain!
 ### 6. Do you know redux? please explain!
