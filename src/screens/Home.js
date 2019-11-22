@@ -10,15 +10,25 @@ class Home extends Component {
     constructor(props){
         super(props)
         this.state={
+            is_fetching: false,
             Posts: []
         }
     }
 
-
+    
     async componentDidMount(){
+        this.onRefress()
+    }
+
+    onRefress = () => {
+        this.setState({is_fetching: true})
+        this.getData()
+    }
+ 
+    getData = async () => {
         await this.props.getPosts()
         this.state.Posts = this.props.posts.posts
-        this.setState({Post: this.state.posts})
+        this.setState({Post: this.state.posts, is_fetching: false})
     }
 
     LikeAll = (arr) => {
@@ -47,15 +57,17 @@ class Home extends Component {
 
 
     DislikeAll = (arr) => {
-        const newPosts = [...arr]
-        newPosts.map(val => {
-                val.like -= 1
-            })
-        return(
-            this.setState({
-                Posts: newPosts
-            })
-        )
+     
+            const newPosts = [...arr]
+            newPosts.map(val => {
+                if(val.like > 0){
+                    val.like -= 1
+            }})
+            return(
+                this.setState({
+                    Posts: newPosts
+                })
+            )
     }
     
     addLike = (arr,i) => {
@@ -68,7 +80,8 @@ class Home extends Component {
       )
     }
 
-    decreaseLike = (arr, i) => {
+    decreaseLike = (arr, i, num) => {
+        if(num > 0){
             const newPost = [...arr]
             newPost[newPost.indexOf(i)].like -= 1
             return(
@@ -76,7 +89,8 @@ class Home extends Component {
                     posts: newPost 
                 })
             )
-        
+        }
+        return 
     }
 
 
@@ -99,6 +113,8 @@ class Home extends Component {
                 <FlatList
                  style={{marginBottom:50}}
                  data={this.state.Posts}
+                 onRefresh={()=>this.onRefress()}
+                 refreshing={this.state.is_fetching}
                  renderItem={({item}) => {
 
                      return <Post key={item.id} 
@@ -106,7 +122,7 @@ class Home extends Component {
                                   image={item.image} 
                                   like={item.like} 
                                   act={()=>this.addLike(this.state.Posts,item)} 
-                                  actdec={()=>this.decreaseLike(this.state.Posts,item)} />
+                                  actdec={()=>this.decreaseLike(this.state.Posts,item, item.like)} />
                  }}
                  keyExtractor={(item)=> item.id}
                 />
