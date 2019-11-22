@@ -134,6 +134,10 @@ Test React Native Developer [Junior]
 
 ## Bonus:
 ### 1. what is different between “if (variable == 1)” and “if(variable === 1)” ?
+### Answer
+    The difference is that the data type ' = = ' Compares 2 values
+    without worrying about the data type, whereas ' = = = ' Compares 2
+    values with the data type.
 ### 2. what is different between common function  and arrow function?
   a. common function:
   functionName() {
