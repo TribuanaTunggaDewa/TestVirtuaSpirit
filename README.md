@@ -38,7 +38,10 @@ Test React Native Developer [Junior]
     This method is invoked before the other method,
     it is where we setup an initialization of the values
     for the state or the other values
-    The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
+    The constructor() method is called with the props, as arguments,
+    and you should always start by calling the super(props) before
+    anything else, this will initiate the parent's constructor method
+    and allows the component to inherit methods from its parent (React.Component).
 
 ###### getDerivedStateFromProps()
     This method is executed just before the Render method.
