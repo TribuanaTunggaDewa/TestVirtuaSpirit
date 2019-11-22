@@ -118,7 +118,8 @@ Test React Native Developer [Junior]
 ### 6. Do you know redux? please explain!
 ### Answer
     Yes I know, Redux is a state management that helps us to set the
-    state globally, Redux has a kind of individual folder structure that is generally divided into actions, reducer, and store.
+    state globally, Redux has a kind of individual folder structure that is generally divided into actions,
+    reducer, and store.
     Store is where we store the state globally, the action is a Tigger
     for us to change the state at Redux and the reducer is where we
     initialize the Gobal state and change it to a new value. But redux 
