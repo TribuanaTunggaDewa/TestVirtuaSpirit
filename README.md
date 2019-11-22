@@ -49,7 +49,14 @@ Test React Native Developer [Junior]
     This method naturally changes the state object based on its initials props.
     This takes the state and props as an argument to return an object that changes the state
 
-###### 
+###### render()
+    The render() method is required, and is the method that actual return jsx wich will show on your device.
+
+###### componentDidMount()
+    The componentDidMount() method is called after the component is rendered.
+    This is where you run statements that requires that the component is already placed in the DOM.
+  
+
 ##### Update
 ##### Unmounting
 
