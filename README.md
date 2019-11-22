@@ -56,6 +56,7 @@ Test React Native Developer [Junior]
     The componentDidMount() method is called after the component is rendered.
     This is where you run statements that requires that the component is already placed in the screen.
 
+
 ##### Update
 ###### getDerivedStateFromProps()
 ###### shouldComponentUpdate()
@@ -77,18 +78,55 @@ Test React Native Developer [Junior]
     updated.
 
 
-
 ##### Unmounting
 ###### componentWillUnmount()
     The componentWillUnmount method is called when the component is
     about to be removed from the screen.
 
-     
-
 
 ### 4. What is different between Component compare to PureComponent And ScrollView compare to Flatlist?
+### Answer
+#### Component vs PureComponent
+    As far as I understand the difference from Component and 
+    PureComponent is in Lifecycle shouldComponentUpdate () where
+    the lifecycle Component we should declare and we fill in 
+    the logic to return a Boolean that determines whether 
+    Rendering should be run back or not.
+    While the purecomponent doesn't have that lifecycle, it by default
+    compare the current and previous state and props values before rerendering them on a screen.
+
+#### ScrollView vs Flatlist
+    As far as I understand the difference in ScrollView and 
+    flatlist is how they load data where the ScrollView will 
+    load data after all items in the data have been finished
+    in the loading so it will overwhelm the ram and will slow 
+    down the performance, while the Flatlist By default it will 
+    restrict only 10 items to be displayed to the screen and
+    the other items will be displayed when the user scrolling.
+
+
 ### 5. Do you know what is a functional component and class component? please explain!
+### Answer
+    Yes I know, functional component is a component made with 
+    functional programming which is also referred to as stateless
+    component because before any hook on react functional component 
+    has no State and also lifecycle so it can only Accept props from
+    the parent component and process them while the component class 
+    is a component created with the programming class, also known as
+    statefull component that has state and lifecycle inside.
+
 ### 6. Do you know redux? please explain!
+### Answer
+    Yes I know, Redux is a state management that helps us to set the
+    state globally, Redux has a kind of individual folder structure that is generally divided into actions, reducer, and store.
+    Store is where we store the state globally, the action is a Tigger
+    for us to change the state at Redux and the reducer is where we
+    initialize the Gobal state and change it to a new value. But redux 
+    itself has a weakness that he cannot handle a process that is
+    asyncrhonus. Redux itself has several middleware to take care of
+    asyncrhonus processes among which I know are redux promises, redux
+    Thunk, and Redux saga. I usually use a promise and ever use thunk, 
+    but for the saga I'm still learning about the function of generators on ES6.
 ### 7. Is there any framework/library/package that you usually used in your project? please list!
 ### 8. Do you know "Ignite boilerplate"? did you use that?
 
