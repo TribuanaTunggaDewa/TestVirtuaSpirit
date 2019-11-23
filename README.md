@@ -126,8 +126,7 @@ Test React Native Developer [Junior]
     itself has a weakness that he cannot handle a process that is
     asyncrhonus. Redux itself has several middleware to take care of
     asyncrhonus processes among which I know are redux promises, redux
-    Thunk, and Redux saga. I usually use a promise and ever use thunk, 
-    but for the saga I'm still learning about the function of generators on ES6.
+    Thunk, and Redux saga. I usually use a promise and ever use thunk.
 ### 7. Is there any framework/library/package that you usually used in your project? please list!
 ### 8. Do you know "Ignite boilerplate"? did you use that?
 
