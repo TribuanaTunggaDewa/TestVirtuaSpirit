@@ -145,6 +145,11 @@ Test React Native Developer [Junior]
     // write some code here
   }
   ```
+### Answer
+    Common function is not a method of object where the keyword this
+    refers to a global variable so if we use this keyword on an object
+    without the keyword keyword(this) then it often returns an
+    undefined value
 
   b. arrow function:
   ```javascript
@@ -152,11 +157,64 @@ Test React Native Developer [Junior]
     // write some code here
   }
   ```
+### Answer 
+    In the arrow function the keyword ' This ' will directly refer to
+    the scope 
 ### 3. what is different between:
   ```javascript
   a. let array = oldArray
   ```
+### Answer
+    In the above statement we are references OldArray so that any
+    changes we make to the Array will be done also to OldArray.
+    The above operations are mutable.
+
   ```javascript
   b. let array = […oldArray]
   ```
+### Answer
+    In the above statement we use the imutable spreads operator, the
+    spread operator will copy all the content on OldArray and insert
+    it into the Array with the assignmen operator. The above statement
+    is an imutable operation
+
 ### 4. create a function that simulates API request using your own approach! 
+### Answer
+    Without redux
+```javascript
+    import React, { Component } from 'react';
+    import {...} from '...'
+    ...
+    ...
+    handleMyProfile(){
+    axios.get(`${ip}/api/v1/user/${this.state.id}`,{
+      headers: {
+          'Authorization': 'Bearer '+ this.state.token 
+      }
+    })
+    .then(res=>{
+      const datas = res.data
+      this.setState({datas})
+      console.log(datas)
+    }).catch(error => {
+      console.log(error.message)
+    })
+
+    }
+```
+    With redux at _action Folder
+```javascript
+    import axios from 'axios'
+    import { domain } from '...'
+    ...
+
+    export const getPosts = () => {
+        return {
+            type: types.GET_POSTS,
+            payload: axios.get(`${domain}/posts`)
+        }
+}
+
+```
+
+
