@@ -7,7 +7,7 @@ Test React Native Developer [Junior]
 ### Answer: I chose react native for some reason as follows:
     1. Large and powerful community, I chose react 
     native as the mobile hybrid development Framework, 
-    because it has a large andstrong community that looks
+    because it has a large and strong community that looks
     from how many communities contribute to the react native ecosystem Own.
 
     2. The programming language base, the programming language 
