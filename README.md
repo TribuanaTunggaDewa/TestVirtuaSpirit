@@ -156,7 +156,7 @@ Test React Native Developer [Junior]
 ### Answer
     Common function is not a method of object where the keyword this
     refers to a global variable so if we use this keyword on an object
-    without the keyword keyword(this) then it often returns an
+    without the keyword bind(this) then it often returns an
     undefined value
 
   b. arrow function:
