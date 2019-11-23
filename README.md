@@ -128,8 +128,17 @@ Test React Native Developer [Junior]
     asyncrhonus processes among which I know are redux promises, redux
     Thunk, and Redux saga. I usually use a promise and ever use thunk.
 ### 7. Is there any framework/library/package that you usually used in your project? please list!
+### Answer
+    * react-native-navigation
+    * react-navigation-stack
+    * react-navigation-tabs  
+    * react-native-paper
+    * react-redux
+    * redux
+    * redux-loger //for development
+    * redux-promise-middleware
 ### 8. Do you know "Ignite boilerplate"? did you use that?
-
+    i know from the test, not yet.
 
 ## Bonus:
 ### 1. what is different between “if (variable == 1)” and “if(variable === 1)” ?
